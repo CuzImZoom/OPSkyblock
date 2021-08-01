@@ -1,13 +1,16 @@
 package de.zoom.opskyblock;
 
+import de.zoom.opskyblock.commands.TestCommand;
 import me.lucko.helper.plugin.ExtendedJavaPlugin;
 
-public class OPSkyblockPlugin extends ExtendedJavaPlugin { // that class is an abstract class, which is sort of like an interface, except mixed with a class
+public class OPSkyblockPlugin extends ExtendedJavaPlugin {
     private static OPSkyblockPlugin instance;
 
     @Override
     protected void enable() {
         instance = this;
+
+        registerCommand(new TestCommand()); // It's that simple, no need of plugin.yml
     }
 
     @Override

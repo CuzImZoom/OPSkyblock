@@ -10,6 +10,10 @@ public class TestGUI extends Gui {
     super(player, 4, "&f&lTest GUI supports colors as title");
   }
 
+  public static void open(Player player) {
+    new TestGUI(player);
+  }
+
   @Override
   public void redraw() {
     setItem(1, ItemStackBuilder.of(Material.BOOK).name("&aA cool book.").build(() -> {
