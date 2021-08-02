@@ -5,9 +5,9 @@ import de.zoom.opskyblock.api.data.ModelId;
 import de.zoom.opskyblock.api.data.impl.MongoDataHelper;
 import de.zoom.opskyblock.commands.TestCommand;
 import de.zoom.opskyblock.listeners.PlayerListener;
-import jdk.jpackage.internal.Log;
 import lombok.Getter;
 import me.lucko.helper.plugin.ExtendedJavaPlugin;
+import me.lucko.helper.utils.Log;
 
 @Getter
 public class OPSkyblockPlugin extends ExtendedJavaPlugin {
